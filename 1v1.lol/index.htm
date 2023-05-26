@@ -182,22 +182,6 @@
 
 		var refreshNextTime = true;
 
-		function showAds() {
-
-			document.getElementsByClassName("ad-rectangle-bottom")[0].style.display = "block";
-			document.getElementsByClassName("ad-leaderboard-bottom")[0].style.display = "block";
-			document.getElementById("adRectangleUpper").style.display = "block";
-
-			if (typeof counter === 'undefined') {
-				startCounter();
-				resumeCounter();
-			}
-			else {
-				resumeCounter();
-				refresh();
-			}
-		}
-
 		function hideAds() {
 
 			document.getElementsByClassName("ad-rectangle-bottom")[0].style.display = "none";
